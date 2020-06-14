@@ -11,8 +11,11 @@ routes.post('/login', LoginController.authenticate);
 routes.get('/dashboard', ProfileController.index)
 routes.post('/new/task', TaskController.create)
 
+routes.put('/task/edit/:id' , TaskController.update)
 
 
+
+routes.delete('/task/delete/:id' , TaskController.delete)
 
 
 
